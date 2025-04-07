@@ -8,6 +8,43 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.holder {
+  display: flex;
+  flex-wrap: wrap;          /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Space between items */
+  align-items: stretch;     /* Stretch items vertically if needed */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  margin: 5px;              /* Space between items */
+  flex: 1 1 calc(25% - 10px);  /* Responsive items, 4 per row with some margin */
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 150px;         /* Prevent items from becoming too small */
+}
+
+	</style>
+	<div class="holder">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+  <div class="item">Item 5</div>
+  <div class="item">Item 6</div>
+</div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
